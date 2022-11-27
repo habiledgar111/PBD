@@ -37,6 +37,13 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+//route untuk home
+$routes->get('/home/insert_view', 'Home::insert_view');
+$routes->post('/home/insert_barang', 'Home::insert_barang');
+
+$routes->get('/home/update_view', 'Home::update_view');
+$routes->post('/home/update_barang', 'Home::update_barang');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
