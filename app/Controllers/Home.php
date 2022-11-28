@@ -23,6 +23,7 @@ class Home extends BaseController
             'jumlah' => $this->request->getPost('jumlah'),
             'harga' => $this->request->getPost('harga')
         );
+        // var_dump($data);
         $model->insert_data($data);
     }
 

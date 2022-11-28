@@ -11,8 +11,9 @@ class barang extends Model{
 
     public function insert_data($data){
         $db = db_connect();
-        $sql = "CALL insert_barang(".$data['nama_table'].",".$data['id'].",".$data['nama_barang'].",".$data['jumlah'].",".$data['harga'].")";
+        $sql = "CALL insert_barang('".$data['nama_table']."',".$data['id'].",'".$data['nama_barang']."',".$data['jumlah'].",".$data['harga'].")";
         $db->query($sql);
+        // var_dump($sql);
 
         // $sql = 'insert into :table: values( :id: , :nama_barang: , :jumlah: , :harga: );';
         // $db->query($sql, [
@@ -22,7 +23,7 @@ class barang extends Model{
         //     'jumlah' => $data['jumlah'],
         //     'harga' => floatval($data['harga'])
         // ]);
-        return view('insert_barang');
+        return view('insert_view');
     }
 
     public function update_data($data){
