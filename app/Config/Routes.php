@@ -44,6 +44,15 @@ $routes->post('/home/insert_barang', 'Home::insert_barang');
 $routes->get('/home/update_view', 'Home::update_view');
 $routes->post('/home/update_barang', 'Home::update_barang');
 
+$routes->get('/home/delete_view', 'Home::delete_view');
+$routes->post('/home/delete_barang', 'Home::delete_barang');
+
+$routes->get('/home/diskon_view', 'Home::diskon_view');
+$routes->post('/home/diskon', 'Home::diskon');
+
+$routes->get('/home/get_allbarang', 'Home::get_allbarang');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
