@@ -14,12 +14,11 @@ class barang extends Model{
         $sql = "CALL insert_barang('".$data['nama_table']."',".$data['id'].",'".$data['nama_barang']."',".$data['jumlah'].",".$data['harga'].")";
         $db->query($sql);
         echo "berhasil";
-        return view('insert_view');
     }
 
     public function update_data($data){
         $db = db_connect();
-        $sql = "CALL update_barang(''".$data['nama_table']."'',".$data['id'].",''".$data['nama_barang']."'',".$data['jumlah'].",".$data['harga'].")";
+        $sql = "CALL update_barang('".$data['nama_table']."',".$data['id'].",'".$data['nama_barang']."',".$data['jumlah'].",".$data['harga'].")";
         $db->query($sql);
         echo "berhasil";
     }
