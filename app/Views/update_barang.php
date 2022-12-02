@@ -10,7 +10,7 @@
 </head>
 <div class="cool-form">
     <div class="container">
-        <form " method=" post" action="/home/update_barang" enctype=" multipart/form-data">
+        <form method="post" action="/home/update_barang" enctype=" multipart/form-data">
             <div class="input-item">
                 <label>Nama Tabel </label>
                 <input type="text" placeholder="Nama Tabel" name="nama_table">
