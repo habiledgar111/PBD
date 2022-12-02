@@ -12,7 +12,7 @@
 <body>
     <div class="cool-form">
         <div class="container">
-            <form " method=" post" action="/home/update_barang" enctype=" multipart/form-data">
+            <form method="post" action="/home/update_barang" enctype=" multipart/form-data">
                 <div class="input-item">
                     <label>Jumlah </label>
                     <input type="text" placeholder="Jumlah" name="jumlah">
